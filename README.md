@@ -10,7 +10,7 @@
   
 ## Naive Bayes Classification:
 
-For Naive bayes classification used MultinomialNB because the the multinomial Naive Bayes classifier is suitable for classification with discrete features (e.g., word counts for text classification).The model is trained on value of alpha in the set [0.00001,0.0001,0.001,0.01,0.1,1,10,100]. We find that for both the Bag of Words and TF-IDF is 0.1.
+For Naive bayes classification used MultinomialNB because the the multinomial Naive Bayes classifier is suitable for classification with discrete features (e.g., word counts for text classification).The model is trained on value of alpha in the set [0.00001,0.0001,0.001,0.01,0.1,1,10,100]. We find that for both the Bag of Words and TF-IDF the best alpha is 0.1.
 
   ### Conclusion:
   | Parameter        | Bag of Words         |TF-IDF  |
