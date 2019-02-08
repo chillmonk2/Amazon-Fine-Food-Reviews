@@ -30,7 +30,7 @@ Used 40000 datapoints for the train and testing split.The model is trained on k 
   ### Conclusion
 
 
-  | Parameter        | Bag of Words         |TF-IDF  | Avg W2V | W W2V|
+  | Parameter        | Bag of Words         |TF-IDF  | Avg W2V | TF-IDF W2V|
 | ------------- |:-------------:| -----:|:-------------:| -----:|
 |  Brute Force best K  |      21      |   5    |    21   |   19   |
 | Brute Force best AUC |    0.6666    | 0.512  |  0.8763 | 0.847  |
@@ -44,3 +44,27 @@ Used 40000 datapoints for the train and testing split.The model is trained on k 
 |      KD Tree FN      |     1616     |  1895  |   1451  |  1578  |
 |      KD Tree FP      |     553      |  458   |   240   |  213   |
 |      KD Tree TP      |     542      |  263   |   707   |  580   |
+
+
+## Logistic Regression:
+
+In this applied a Logistic Regression of both type L1 and L2 Regularization on 80k datapoints.We also applied perturbation technique to test whether features are collinear or not.We find top 10 positive and negative features for Bag of Words and TF-IDF.
+
+### Conclusion
+
+  | Parameter        | Bag of Words         |TF-IDF  | Avg W2V | TF-IDF W2V|
+| ------------- |:-------------:| -----:|:-------------:| -----:|
+| C with L1 Regularization |     0.01     |  0.01  |    1    |     1      |
+| C with L2 Regularization |    0.0001    | 0.0001 |    1    |     1      |
+|    Best AUC Train L1     |     0.97     | 0.983  |  0.9029 |   0.8814   |
+|     Best AUC Test L1     |     0.93     |  0.96  |  0.9063 |   0.8827   |
+|    Best AUC Train L2     |     0.99     |  0.98  |  0.9063 |   0.8827   |
+|     Best AUC Test L2     |     0.95     |  0.89  |  0.9029 |   0.8814   |
+|   TN L1 Regularization   |    23762     | 23874  |  23539  |   23557    |
+|   FN L1 Regularization   |     2084     | 21627  |   2496  |    2875    |
+|   FP L1 Regularization   |     2624     |  3081  |   2218  |    1833    |
+|   TP L1 Regularization   |     270      |  384   |   719   |    704     |
+|   TN L2 Regularization   |    23988     | 23902  |  23539  |   23554    |
+|   FN L2 Regularization   |     2534     |  1899  |   2492  |    2876    |
+|   FP L2 Regularization   |     2174     |  2809  |   2216  |    1832    |
+|   TP L2 Regularization   |     270      |  356   |   719   |    701     |
