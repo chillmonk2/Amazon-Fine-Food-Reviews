@@ -68,3 +68,22 @@ In this applied a Logistic Regression of both type L1 and L2 Regularization on 8
 |   FN L2 Regularization   |     2534     |  1899  |   2492  |    2876    |
 |   FP L2 Regularization   |     2174     |  2809  |   2216  |    1832    |
 |   TP L2 Regularization   |     270      |  356   |   719   |    701     |
+
+
+## Support Vector Machines:
+
+We have implemented the support vector machines with Linear Support Vector and using Kernalization of type RBF.Also we have extracted top ten features of both positive and negative classes in the case of Linear SVM.     
+
+### Conclusion:
+
+  | Parameter        | Bag of Words         |TF-IDF  | Avg W2V | TF-IDF W2V|
+| ------------- |:-------------:| -----:|:-------------:| -----:|
+| alpha with L1 Reg Linear SVM |    0.0001    | 1e-05  |  0.0001 |   0.001    |
+| alpha with L2 Reg Linear SVM |     0.1      |  0.1   |   0.01  |    0.01    |
+| Best AUC Train L1 Linear SVM |     0.87     |  0.97  |   0.9   |   0.8777   |
+| Best AUC Test L1 Linear SVM  |     0.97     |  0.88  |   0.9   |    0.88    |
+|      Best AUC Train L2       |    0.995     | 0.996  |  0.9016 |    0.88    |
+|       Best AUC Test L2       |     0.89     |  0.89  |  0.9045 |    0.88    |
+|            RBF C             |      10      |   10   |   0.1   |     10     |
+|  Best AUC Train RBF Kernel   |    0.999     |  0.99  |   0.99  |    0.98    |
+|   Best AUC Test RBF Kernel   |    0.895     |  0.91  |  0.878  |   0.864    |
