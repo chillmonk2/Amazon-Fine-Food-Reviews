@@ -87,3 +87,13 @@ We have implemented the support vector machines with Linear Support Vector and u
 |            RBF C             |      10      |   10   |   0.1   |     10     |
 |  Best AUC Train RBF Kernel   |    0.999     |  0.99  |   0.99  |    0.98    |
 |   Best AUC Test RBF Kernel   |    0.895     |  0.91  |  0.878  |   0.864    |
+
+## Decision Trees:
+
+### Conclusion:
+
+  | Parameter        | Bag of Words         |TF-IDF  | Avg W2V | TF-IDF W2V|
+| ------------- |:-------------:| -----:|:-------------:| -----:|
+|    Max Depth    |      10      |   10   |    5    |     10     |
+| Best AUC Train  |     0.99     |  0.99  |   0.99  |   0.999    |
+|  Best AUC Test  |     0.75     |  0.75  |   0.79  |    0.75    |
