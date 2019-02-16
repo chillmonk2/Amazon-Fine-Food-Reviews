@@ -97,3 +97,20 @@ We have implemented the support vector machines with Linear Support Vector and u
 |    Max Depth    |      10      |   10   |    5    |     10     |
 | Best AUC Train  |     0.99     |  0.99  |   0.99  |   0.999    |
 |  Best AUC Test  |     0.75     |  0.75  |   0.79  |    0.75    |
+
+# Ensemble Methods:
+
+We have used Bagging technique Random Forest and Boosing technique Gradient Boosting Decision Trees with hyperparameter tuning.
+
+### Conclusion:
+
+| Parameter        | Bag of Words         |TF-IDF  | Avg W2V | TF-IDF W2V|
+| ------------- |:-------------:| -----:|:-------------:| -----:|
+|     Depth Random Forest      |     125      |  125   |   100   |    100     |
+|  n_estimators Random Forest  |      25      |   25   |    25   |     25     |
+|        Depth XGBoost         |      75      |   75   |    50   |     50     |
+|     n_estimators XGBoost     |      25      |   25   |    25   |     25     |
+| Best AUC Train Random Forest |    0.9976    | 0.998  |  0.999  |   0.999    |
+| Best AUC Test Random Forest  |     0.9      |  0.9   |  0.8898 |    0.88    |
+|    Best AUC Train XGBoost    |     0.99     |  0.99  |   0.99  |    0.99    |
+|    Best AUC Test XGBoost     |    0.892     |  0.91  |   0.89  |    0.87    |
